@@ -3,6 +3,8 @@ on:
   schedule:
     - cron: '*/10 * * * *'
   workflow_dispatch:
+  repository_dispatch:
+    types: [tick]
 jobs:
   commit:
     runs-on: ubuntu-latest
